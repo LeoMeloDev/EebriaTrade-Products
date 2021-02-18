@@ -1,38 +1,258 @@
-.App {
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/***** 
+HEADER
+******/
+
+#eebria-logo {
+  display: block;
+  margin: 50px auto;
+  width: 200px;
+}
+
+.header-title {
+  font-family: 'Montserrat', sans-serif;
   text-align: center;
+  font-size: 42px;
+  font-weight: 900;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/******** 
+ FILTERS
+*********/
+.filter {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-wrap: wrap;
+  margin: auto;
+  background-color: #F1592B;
 }
 
-.App-link {
-  color: #61dafb;
+.fa-sliders-h {
+  padding-left: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.filter-main-title {
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 500;
+  padding: 40px;
+}
+
+.filter-box {
+  border-right: 1px solid #bababa;
+  width: 49%;
+  text-align: center;
+  padding: 30px 0px;
+}
+
+.filter-box-last {
+  border-right: none;
+  width: 49%;
+  text-align: center;
+  padding: 30px 0px;
+}
+
+.filter-box-section {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  padding: 10px;
+  font-weight: 500;
+  color: #fff;
+}
+
+.filter-box-title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  padding: 10px;
+  font-weight: 300;
+  
+}
+
+.filter-btn {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  padding: 10px 20px;
+  font-weight: 900;
+  background-color: #F1592B;
+  border: 2px solid #fff;
+  margin: 10px;
+  color: #fff;
+}
+
+
+/******** 
+ PRODUCTS
+********/
+
+p.isLoading {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 70px;
+  margin: 20px auto;
+  font-weight: 900;
+  color: #F1592B;
+}
+
+.product-view {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 24px;
+  text-align: center;
+  padding: 20px;
+  font-weight: 900;
+  color: #F1592B;
+}
+
+.product-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: #f1f2f3;
+
+}
+
+.product {
+  width: 300px;
+  padding: 30px;
+  margin: 20px auto;
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.product-img {
+  width: 200px;
+  display: block;
+  margin: auto;
+  transition: 1s;
+  cursor: zoom-in;
+}
+
+.product-img:hover {
+  width: 300px;
+}
+
+.product-name {
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 900;
+  padding: 10px;
+
+}
+
+.product-style {
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  font-size: 16px;
+  padding: 10px;
+  text-transform: capitalize;
+}
+
+.product-price {
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  font-size: 15px;
+  padding: 10px;
+}
+
+/******** 
+ FOOTER
+********/
+
+footer {
+  background-color: #F1592B;
+  padding: 20px;
+}
+
+footer h5 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  padding: 10px;
+  text-align: center;
+  font-weight: 900;
+  color: #fff;
+}
+
+footer p {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  padding: 10px;
+  text-align: center;
+  font-weight: 900;
+  color: #fff;
+}
+
+/*************** 
+     MOBILE 
+***************/
+
+@media screen and (max-width: 768px) {
+  .header-title {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    font-size: 32px;
+    font-weight: 900;
   }
-  to {
-    transform: rotate(360deg);
+
+  .filter-box {
+    border-right: none;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0px;
+  }
+  
+  .filter-box-last {
+    border-right: none;
+    width: 100%;
+    text-align: center;
   }
 }

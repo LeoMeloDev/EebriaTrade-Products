@@ -1,3 +1,15 @@
+# Executing The Eebria Products App
+
+This app was created in React to make it more dynamic and engaging.
+
+In order to execute the app, once the repository is cloned, is to open the project directory and run:
+
+### `npm start`
+or
+### `yarn start`
+
+depending on your package management choice.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
