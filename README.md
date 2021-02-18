@@ -2,13 +2,13 @@
 
 This app was created in React to make it more dynamic and engaging.
 
-In order to execute the app, once the repository is cloned, is to open the project directory and run:
+In order to execute the app, once the repository is cloned, follow these steps:
 
-### `npm start`
-or
-### `yarn start`
+1. Navigate to the root of the project in a terminal window
+2. Run the command `npm install` to install packages
+3. Run the command `npm start` to start the development server
+4. View the project at http://localhost:3000/ in the browser
 
-depending on your package management choice.
 
 # Getting Started with Create React App
 
@@ -25,11 +25,6 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 The page will reload if you make edits.\
 You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
 ### `npm run build`
 
